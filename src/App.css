@@ -313,8 +313,8 @@ header a:hover{
 
 .button-offer {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10px;
+  right: 10px;
 }
 
 /**********FIN OFFERSECTION************/
@@ -401,6 +401,11 @@ header a:hover{
 
   .hero-presentation{
     width: 100%;
+  }
+
+  .button-offer {
+    position: unset;
+    float: right;
   }
 }
 
