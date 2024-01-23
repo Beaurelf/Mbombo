@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mbombo/static/css/main.764484d6.css",
+    "main.js": "/mbombo/static/js/main.5e427f8f.js",
+    "static/js/787.498e3191.chunk.js": "/mbombo/static/js/787.498e3191.chunk.js",
+    "static/media/nous.png": "/mbombo/static/media/nous.889a09271013833008c1.png",
+    "static/media/but.png": "/mbombo/static/media/but.0a63c87428764071fd32.png",
+    "static/media/service.png": "/mbombo/static/media/service.6b6e651bf3af3087b39a.png",
+    "static/media/home.png": "/mbombo/static/media/home.88a9a025095ad8309a6d.png",
+    "static/media/contact.png": "/mbombo/static/media/contact.1362f6665d40225b11ed.png",
+    "static/media/qui-sommes-nous-0.png": "/mbombo/static/media/qui-sommes-nous-0.6228ff78d2bab40d57a7.png",
+    "static/media/logo-university-ztf.avif": "/mbombo/static/media/logo-university-ztf.15302e9fd82e8b8b6be5.avif",
+    "static/media/logo.png": "/mbombo/static/media/logo.d928e4794f0457185726.png",
+    "index.html": "/mbombo/index.html",
+    "main.764484d6.css.map": "/mbombo/static/css/main.764484d6.css.map",
+    "main.5e427f8f.js.map": "/mbombo/static/js/main.5e427f8f.js.map",
+    "787.498e3191.chunk.js.map": "/mbombo/static/js/787.498e3191.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.764484d6.css",
+    "static/js/main.5e427f8f.js"
+  ]
+}
