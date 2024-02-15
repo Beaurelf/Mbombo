@@ -1,22 +1,22 @@
 import React from 'react'
+import './ContactForm.css'
 
 function ContactForm() {
 
   return (
-    <section className='card contact-form shadow-lg mb-3 p-5'>
-        <form className='form'>
-            <h2>Nous Contactez</h2>
-            <div className="form-floating mb-3">
-                <input type="text" class="form-control" id="name" placeholder="mot de passe"/>
-                <label for="name">Nom</label>
+    <section className='contact-form mb-3 p-5'>
+        <form className='form' data-aos="fade-up">
+            <div className="mb-3">
+                <label className='form-label' htmlFor="name">Nom et prenom</label>
+                <input type="text" className="my-form-control" id="name" placeholder="mot de passe"/>
             </div>
-            <div className="form-floating mb-3">
-                <input type="email" class="form-control" id="email" placeholder="nom@exemple.com"/>
-                <label for="email">Adresse e-mail</label>
+            <div className="mb-3">
+                <label htmlFor="email">Adresse e-mail</label>
+                <input type="email" className="my-form-control" id="email" placeholder="nom@exemple.com"/>
             </div>
-            <div className="form-floating mb-3">
-                <textarea class="form-control" placeholder="votre message" id="message" style={{height: 200}}></textarea>
-                <label for="message">Votre message</label>
+            <div className="mb-3">
+                <label htmlFor="message">Votre message</label>
+                <textarea className="my-form-control" placeholder="votre message" id="message" style={{height: 200}}></textarea>
             </div>
             <button className='form-btn button'>Soumettre</button>
         </form>

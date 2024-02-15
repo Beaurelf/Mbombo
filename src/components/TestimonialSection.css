@@ -1,0 +1,43 @@
+.testimonials {
+    background : linear-gradient(208.18deg, var(--blue-light-3) 9.05%, var(--blue-light-4) 76.74%);
+    text-align: center;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.testimonials .title-section {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.testimonials img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+}
+
+.name {
+    font-family: myPoppins;
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+}
+
+.comment {
+    font-family: myMontserrat;
+    font-size: 22px;
+    color: white;
+}
+
+.next, .previous {
+    background-color: white;
+    color: var(--blue-dark);
+}
+
+@media (max-width: 850px) {
+  .testimonials div:nth-child(2) {
+    flex-direction: column;
+  }
+}

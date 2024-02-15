@@ -1,39 +1,43 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
+import Logo from '../assets/img/logo.png'
+import './Footer.css'
 
 function Footer() {
+  const navigate = useNavigate()
   return (
     <footer className="footer">
       <div className=' d-flex justify-content-around p-4'>
         <div className="footer-item">
-          <h5>MBOMBO</h5>
-          <h6>ENTREPRISE</h6>
-          <address>
+          <img className='logo-footer-phone' data-aos="fade-up" src={Logo} alt='Logo Mbombo'onClick={() => navigate('/')}/>
+          <h5 data-aos="fade-up">MBOMBO</h5>
+          <address data-aos="fade-up">
             <p className='m-0'>2559C rue Everett</p>
             <a href="mailto:mbomboenterprise@gmail.com">mbomboenterprise@gmail.com</a><br/>
             <a href="tel:+1(514)605-3560">+1(514)605-3560</a>
           </address>
+          <img className='logo-footer' src={Logo} alt='Logo Mbombo'onClick={() => navigate('/')}/>
         </div>
         <div className="footer-item">
-          <Link to=''>Acceuil</Link>
-          <Link to='/services'>Offres</Link>
-          <Link to='/about-us'>À propos de nous</Link>
-          <Link to='/contact-us'>Contact</Link>
+          <Link data-aos="fade-up" to=''>Accueil</Link>
+          <Link data-aos="fade-up" to='/services'>Offres</Link>
+          <Link data-aos="fade-up" to='/about-us'>À propos de nous</Link>
+          <Link data-aos="fade-up" to='/contact-us'>Contact</Link>
         </div>
         <div className="footer-item">
-          <a href="https://www.facebook.com"><i className='fa-brands fa-facebook'></i>  Facebook</a>
-          <a href="https://www.twitter.com"><i className='fa-brands fa-twitter'></i>  Twitter</a>
-          <a href="https://www.instagram.com"><i className='fa-brands fa-instagram'></i> Instagram</a>
+          <a href="https://www.facebook.com" data-aos="fade-up"><i className='fa-brands fa-facebook mx-2'></i> Facebook</a>
+          <a href="https://www.twitter.com" data-aos="fade-up"><i className='fa-brands fa-twitter mx-2'></i> Twitter</a>
+          <a href="https://www.instagram.com" data-aos="fade-up"><i className='fa-brands fa-instagram mx-2'></i> Instagram</a>
         </div>
         <div className="footer-item newsletter">
-          <p>S'abonner à notre newsletter</p>
-          <form className='row'>
+          <p data-aos="fade-up">S'abonner à notre newsletter</p>
+          <form className='row' data-aos="fade-up">
             <input id="newsletter-email" className='col-10' type="email" placeholder="Email Address" />
             <button className='col-2' type="submit">OK</button>
           </form>
         </div>
       </div>
-      <p className='text-center'>Copyright © 2024 –Mbombo entreprise</p>
+      <p className='text-center'>Copyright © 2024 –Mbombo</p>
     </footer>
   )
 }

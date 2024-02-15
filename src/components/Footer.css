@@ -1,0 +1,67 @@
+.footer {
+    background-color: var(--blue-dark);
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: myRoboto;
+    padding: 10px;
+}
+
+.logo-footer, .logo-footer-phone {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transform: scale(1.75);
+}
+
+.logo-footer-phone {
+    display: none;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a {
+    margin: 0.5rem 0;
+    color: white;
+    text-decoration: none;
+}
+
+.newsletter form {
+    padding: 2px;
+    overflow: hidden;
+    border-radius: 3px;
+    background-color: var(--or);
+}
+
+.newsletter form input {
+    border: none;
+    outline: none;
+}
+
+.newsletter form input:focus {
+    border: 1px solid var(--or);
+    outline: none;
+}
+
+.newsletter form button {
+    border: none;
+    color: white;
+    background-color: var(--or);
+}
+
+@media (max-width: 768px) {
+  .footer > div {
+    flex-direction: column;
+  }
+
+  .logo-footer-phone {
+    display: block;
+  }
+  
+  .logo-footer {
+    display: none;
+  }
+}

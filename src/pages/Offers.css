@@ -1,0 +1,17 @@
+.assistant-description h5 {
+    font-family: myPoppins;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.assistant-description p{
+    font-family: myMontserrat;
+    font-size: 18px;
+    color: var(--blue-dark);
+    font-weight: 500;
+}
+
+.assistant-description img {
+    width: 95%;
+    height: 95%;
+}

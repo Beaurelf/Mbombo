@@ -1,54 +1,49 @@
-import React, {useState} from 'react'
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import './OfferSection.css'
 
 function OfferSection({offers}) {
-
-    const [visibleCompositions, setVisibleCompositions] = useState({});
-
-    const toggleCompositionVisibility = (index) => {
-        setVisibleCompositions(prevState => ({
-            ...prevState,
-            [index]: !prevState[index]
-        }));
-    };
+    const navigate = useNavigate()
 
     return (
-        <section className='offer-section row mb-4 p-1'>
+        <div className='offer-section'>
+            <div className='text-center' data-aos="fade-up">
+                <h2 className='title-section'>Nos offres</h2>
+            </div>
+            <p className='subtitle-section text-center' data-aos="fade-up">Assurez le bien-être de vos proches au Cameroun en leur offrant nos services de soins à domicile</p>
+            <div className='row'>
             {
                 offers.map((offer, index) => {
                     return(
-                        <div className=' col-sm-12 col-md-6 col-lg-6 p-2 position-relative' key={index}>
-                            <div className="card card-offer" style={{height: visibleCompositions[index] ? 'auto' : 250}}>
-                                <div className="card-header  d-flex justify-content-between">
-                                    <h5>{offer.name}</h5>
-                                    <h5>{offer.price}$ par mois</h5>
+                        <div className=' col-sm-12 col-md-6 col-lg-4 p-4' key={index}>
+                            <div className='offer-item p-4' data-aos="fade-up">
+                                <div className='offer-header'>
+                                    <h3 className='offer-title'>{offer.name}</h3>
+                                    <p className='offer-price'>€{offer.price}/mois</p>
+                                    <div className='offer-line'></div>
                                 </div>
-                                <div className="card-body">
-                                    <div className="card-text">
-                                        <p>{offer.description}</p>
-                                        {visibleCompositions[index] &&
-                                            <>
-                                                <p>Ce forfait comprend:</p>
-                                                <ul>
-                                                    {offer.composition.map((c, compIndex) => (
-                                                        <li key={compIndex}>
-                                                            <i className="fa-regular fa-hand-point-right mx-2"></i>
-                                                            <span>{c}</span>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </>
+                                <div className='offer-body d-flex justify-content-center align-items-center flex-column'>
+                                    <div className='mb-4'>
+                                        {
+                                            offer.composition.map((c, index) => {
+                                                return <div className='d-flex align-items-center' key={index}>
+                                                            <p className='check'>
+                                                                <i className="fa-solid fa-check"></i>
+                                                            </p>
+                                                            <p>{c}</p>
+                                                        </div>
+                                            })
                                         }
                                     </div>
-                                    <button className="button button-offer" onClick={() => toggleCompositionVisibility(index)}>
-                                        {!visibleCompositions[index] ? 'plus de details' : 'moins de details'}
-                                    </button>
+                                    <button className='button' onClick={() => {navigate('/contact-us')}}>Choisir ce forfait</button>
                                 </div>
                             </div>
                         </div>
                     )
                 })
             }
-        </section>
+            </div>
+        </div>
     )
 }
 

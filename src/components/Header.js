@@ -1,6 +1,7 @@
 import React from 'react'
-import Logo from '../img/logo.png'
+import Logo from '../assets/img/logo.png'
 import {Link, useLocation, useNavigate} from 'react-router-dom'
+import './Header.css'
 
 const menus = [
     {

@@ -1,0 +1,21 @@
+
+.contact-slogan h3 {
+    font-weight: 800;
+    font-family: myAbhayaLibre;
+}
+
+.contact-slogan h3 span {
+    color: var(--blue-dark);
+    font-size: 40px;
+}
+
+.contact-slogan div p {
+    color: var(--blue-dark);
+    font-weight: 500;
+    font-family: myMontserrat;
+}
+
+.contact-slogan img {
+    height: 350px;
+    width: 325px;
+}

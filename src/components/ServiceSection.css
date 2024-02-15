@@ -1,0 +1,45 @@
+.service > div > p {
+    width: auto;
+    text-align: center;
+}
+
+.background-service {
+    position: absolute;
+    top: 650px;
+    left: 0;
+    z-index: -1;
+}
+
+.service-item {
+    height: auto;
+    background: white;
+    border-radius: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    position: relative;
+}
+
+.service-item-title {
+    font-family: myPoppins;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.service-item-text {
+    font-family: myMontserrat;
+    font-size: 16px;
+    color: var(--blue-dark);
+    font-weight: 500;
+}
+
+.service-item .card-body .button {
+    float: right;
+    background-color: var(--blue-light-1);
+    color: var(--blue-dark);
+}
+
+
+
+
+

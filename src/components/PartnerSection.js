@@ -1,6 +1,7 @@
 import React from 'react'
-import universityZtf from '../img/logo-university-ztf.avif'
-import hopeClinic from '../img/logo-hope-clinic.png'
+import universityZtf from '../assets/img/logo-university-ztf.png'
+import hopeClinic from '../assets/img/logo-hope-clinic.png'
+import './PartnerSection.css'
 
 const logoPartners = [
     universityZtf,
@@ -9,8 +10,10 @@ const logoPartners = [
 
 function PartnerSection() {
     return (
-        <div className='partner-section mb-4'>
-            <h2 className='text-center mb-3'>Nos partenaires</h2>
+        <div className='partner-section mb-4' data-aos="fade-up">
+            <div className='text-center'>
+                <h2 className='title-section'>Nos partenaires</h2>
+            </div>
             <div>
                 {
                     logoPartners.map((logo, index) => {

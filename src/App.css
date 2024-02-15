@@ -1,17 +1,56 @@
-  /************VARIABLE**************/
+/************VARIABLE**************/
+
 :root{
   --orange : #d97653;
   --or : #f0c575;
+  --blue-dark : #2575A6;
+  --blue-light-1 : #E3F4FF;
+  --blue-light-2 : #E9F1F6;
+  --blue-light-3 : #67C3F3;
+  --blue-light-4 : #5A98F2;
 }
 
-html, body{
+@font-face {
+  font-family: myRoboto;
+  src: url('./assets/font-family/roboto-condensed.regular.ttf');
+}
+
+@font-face {
+  font-family: myMontserrat;
+  src: url('./assets/font-family/montserrat.regular.ttf');
+}
+
+@font-face {
+  font-family: myAbhayaLibre;
+  src: url('./assets/font-family/abhaya-libre.regular.ttf');
+}
+
+@font-face {
+  font-family: myPoppins;
+  src: url('./assets/font-family/poppins.regular.ttf');
+}
+/************FIN VARIABLE*******************/
+
+html, body {
   height: auto;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
-body{
-    margin-top: 100px;
+body {
+  margin-top: 150px;
+}
+
+.background-1, .background-2 {
+  position: absolute;
+  top: -100px;
+  z-index: -1;
+  left: 0;
+}
+
+.background-2 {
+  top: 800px;
 }
 
 .my-container{
@@ -24,13 +63,14 @@ body{
 }
 
 .button, .button2{
-  background-color: var(--orange);
+  background-color: var(--blue-dark);
   border: none;
   color: white;
   padding: 5px 30px;
   border-radius: 20px;
   cursor: pointer;
   font-weight: 500;
+  font-family: myMontserrat ;
 }
 
 .button2 {
@@ -50,367 +90,50 @@ body{
   right: 10px;
   text-decoration: none;
   background-color: rgb(36, 198, 36);
+  font-size:18px;
 }
 
-.button-whatsapp:hover{
-  color: white;
-}
-
-/***********HEADER***************/
-
-header{
-  width: 100%;
-  height: 100px;
-  background-color: white;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-}
-
-.menu-phone {
-  color: var(--orange);
-  font-size: 30px;
-  display: none;
-}
-
-.logo {
-  height: 80px;
-  width: 80px;
-  cursor: pointer;
-}
-
-header nav ul {
-  list-style: none;
-}
-
-header a{
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-}
-
-.contact-us {
-  display: none;
-  text-decoration: none;
-  background-color: var(--or);
-}
-
-.contact-us:hover {
-  color: white;
-}
-
-header a:hover{
-  color: white;
-}
-
-.menu-item {
-  color: var(--orange) !important;
-  font-weight: 700;
-  padding: 7px;
-  text-decoration: none;
-}
-
-.active, .menu-item:hover {
-  background-color: var(--orange);
-  border-radius: 20px;
-  color: white !important;
-}
-
-/******FIN HEADER*********/
-
-/********HERO SECTION*************/
-
-.hero-section {
-  height: auto;
-  background-color: var(--orange);
-  border-radius: 20px;
-  padding: 20px;
-}
-
-.hero-section img{
-  width:300px;
-  height:280px;
-  border-radius:10px;
-}
-
-.hero-presentation {
-  color: var(--white);
-  width: 70%;
-  color: white;
-}
-
-.hero-presentation h1 {
-  color: var(--or);
-  margin: 0;
-}
-
-/******FIN HERO SECTION*********/
-
-/******ABOUT SECTION********/
-.about-text {
-  padding: 20px;
-  border-left: 5px solid var(--orange);
-  border-top: 2px solid var(--orange);
-  border-radius: 20px;
-}
-
-.about-image img {
-  width: 100%;
-  height: var(--height-img-box);
-  border-radius: 20px;
-}
-
-.about-text ul {
-  text-decoration: none;
-  list-style: none;
-}
-
-.about-text ul li i{
-  margin-right: 10px;
-}
-
-/********FIN ABOUT SECTION*********/
-
-/******OFFER SECTION********/
-
-.goal-section {
-  margin-bottom: 50px;
-}
-
-.goal-text {
-  padding: 20px;
-  border-right: 5px solid var(--orange);
-  border-bottom: 2px solid var(--orange);
-  border-radius: 20px;
-}
-
-.goal-text ul {
-  text-decoration: none;
-  list-style: none;
-}
-
-.goal-text ul li i {
-  margin-right: 10px;
-}
-
-.goal-image img {
-  width: 100%;
-  height: var(--height-img-box);
-  border-radius: 10px;
-}
-
-/********FIN OFFER SECTION*********/
-
-/******PARTNER SECTION********/
-
-.partner-section > div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-/********FIN PARTNER SECTION*********/
-
-/*******BOX**********/
-.box {
-  border-radius: 20px;
-}
-
-.box-title {
-  color: var(--orange);
-}
-
-.box-text {
-  color: black ;
-}
-
-/******FIN BOX*******/
-
-/*********TEAM SECTION***********/
-
-.team-item{
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.team-item .card-img{
-  background-color: var(--orange);
-}
-
-.team-item img{
-  width: 75%;
-  border-radius: 50%;
-  background-color: white;
-  padding: 5px;
-}
-
-.team-item-role{
-  color: var(--orange)
-}
-
-/*********FIN TEAM SECTION*********/
-
-/*********TESTIMONIAL SECTION**********/
-.testimonials{
+.title-section {
+  position: relative;
   text-align: center;
-}
-
-/*********FIN TESTIMONIAL SECTION********/
-
-/*********CONTACT********/
-
-.contact-info-container{
-  border-radius: 20px;
-  height: 250px;
-}
-
-.contact-info-container p{
-  color: var(--orange);
-  font-size: 25px;
-}
-
-.contact-icon{
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  background-color: var(--orange);
-  color: white;
+  display: inline-block;
+  margin-bottom: 50px;
+  font-family: myAbhayaLibre;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 36px;
 }
 
-.contact-icon i{
-  font-size: 50px;
-}
-
-.contact-form{
-  border-radius: 20px;
-}
-
-.form-btn {
-  width: 100% !important;
-  font-size: 20px;
-}
-
-/*******FIN CONTACT*******/
-
-
-/**********OFFERSECTION**************/
-.card {
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.card-offer .card-header {
-  background-color: var(--orange);
-  color: white;
-}
-
-.card-offer .card-text ul {
-  list-style: none;
-}
-
-.button-offer {
+.title-section::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 1px;
+  background-color: currentColor;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: -5px;
+  left: 25%;
 }
 
-/**********FIN OFFERSECTION************/
-
-/********FOOTER*********/
-.footer {
-  background-color: var(--orange);
-  color: white;
-  font-weight: 700;
-  padding: 3px;
-}
-
-.footer-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer a {
-  margin: 0.5rem 0;
-  color: white;
-  text-decoration: none;
-}
-
-.newsletter form {
-  padding: 2px;
-  overflow: hidden;
-  border-radius: 3px;
-  background-color: var(--or);
-}
-
-.newsletter form input{
-  border: none;
-  outline: none;
-}
-
-.newsletter form input:focus {
-  border: 1px solid var(--or);
-  outline: none;
-}
-
-.newsletter form button {
-  border: none;
-  color: white;
-  background-color: var(--or);
-}
-
-/*********FIN FOOTER**********/
-
-/**********RESPONSIVE DESIGN*************/
-@media (max-width: 1300px) {
-  .menu-pc {
-    display: none;
-  }
-
-  .menu-phone {
-    display: block;
-  }
-
-  .contact-us {
-    display: block;
-    position: fixed;
-    bottom: 70px;
-    right: 20px;
-    z-index: 100;
-  }
+.subtitle-section {
+  color: var(--blue-dark);
+  font-weight: 400;
+  font-size: 18px;
+  font-family: myMontserrat;
 }
 
 @media (max-width: 768px) {
   .my-container{
     grid-template-columns: 0.15fr 3fr 0.15fr;
   }
-  .footer > div{
-    flex-direction: column;
+
+  .background-1, .background-2 {
+    top: 100px;
+    z-index: -1;
+    left: 0;
   }
 
-  .hero-section{
-    flex-direction: column;
-  }
-
-  .hero-section img{
-    width: 100%;
-    height: 400px;
-  }
-
-  .hero-presentation{
-    width: 100%;
-  }
-
-  .button-offer {
-    position: unset;
-    float: right;
-  }
-}
-
-@media (max-width: 450px) {
-  .my-container {
-    grid-template-columns: 0.15fr 3fr 0.15fr;
+  .background-2 {
+    top: 975px;
   }
 }
