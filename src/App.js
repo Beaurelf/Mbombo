@@ -15,8 +15,24 @@ import 'aos/dist/aos.css'
 
 function App() {
   useEffect(() => {
-    Aos.init({duration:1500})
-  })
+    Aos.init({
+      duration : 1500, 
+      disable : function() {
+        var maxWidth = 768;
+        return window.innerWidth < maxWidth;
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      Aos.refresh();
+    });
+
+    return () => {
+      window.removeEventListener('resize', () => {
+        Aos.refresh();
+      });
+    };
+  }, []);
 
   return (
       <div className="App">
