@@ -39,10 +39,11 @@ html, body {
 }
 
 body {
+  position: relative;
   margin-top: 150px;
 }
 
-.background-1, .background-2 {
+.background-1, .background-2, .background-3 {
   position: absolute;
   top: -100px;
   z-index: -1;
@@ -51,6 +52,10 @@ body {
 
 .background-2 {
   top: 800px;
+}
+
+.background-3 {
+  top: 700px;
 }
 
 .my-container{
@@ -136,4 +141,9 @@ body {
   .background-2 {
     top: 975px;
   }
+
+    .background-3 {
+      top: 800px;
+      height: 1000px;
+    }
 }

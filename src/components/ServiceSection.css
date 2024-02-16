@@ -3,13 +3,6 @@
     text-align: center;
 }
 
-.background-service {
-    position: absolute;
-    top: 650px;
-    left: 0;
-    z-index: -1;
-}
-
 .service-item {
     height: auto;
     background: white;

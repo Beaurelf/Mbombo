@@ -46,7 +46,7 @@ function ServiceSection() {
     return (
         <section className='my-container'>
             <div className='grid service'>
-                <svg className='background-service' viewBox="0 0 1728 725" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className='background-3' viewBox="0 0 1728 725" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M-57.0339 41.4915C83.2673 -45.3541 389.116 207.187 760.109 145.632C1081.44 92.2977 1112.13 5.7672 1362.8 0.345717C1545.94 
                     -3.63541 1736.53 47.0992 1829.77 145.632C1932.59 254.271 1869.59 371.995 1852.63 400.634C1776.79 529.078 1601.86 602.564 1540.27 627.742C1286.52
                      731.415 1021.55 726.393 894.426 724.019C416.925 715.015 -68.1019 544.702 -57.0341 336.666C-55.6307 309.432 -120.367 80.7079 -57.0339 41.4915Z" 
