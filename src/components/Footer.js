@@ -25,9 +25,9 @@ function Footer() {
           <Link data-aos="fade-up" to='/contact-us'>Contact</Link>
         </div>
         <div className="footer-item">
-          <a href="https://www.facebook.com" data-aos="fade-up"><i className='fa-brands fa-facebook mx-2'></i> Facebook</a>
-          <a href="https://www.twitter.com" data-aos="fade-up"><i className='fa-brands fa-twitter mx-2'></i> Twitter</a>
-          <a href="https://www.instagram.com" data-aos="fade-up"><i className='fa-brands fa-instagram mx-2'></i> Instagram</a>
+          <a href="https://www.facebook.com" data-aos="fade-up"><i className='fa-brands fa-facebook me-2'></i> Facebook</a>
+          <a href="https://www.twitter.com" data-aos="fade-up"><i className='fa-brands fa-twitter me-2'></i> Twitter</a>
+          <a href="https://www.instagram.com" data-aos="fade-up"><i className='fa-brands fa-instagram me-2'></i> Instagram</a>
         </div>
         <div className="footer-item newsletter">
           <p data-aos="fade-up">S'abonner à notre newsletter</p>

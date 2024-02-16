@@ -1,4 +1,4 @@
-import { BrowserRouter,Routes, Route } from 'react-router-dom';
+import { BrowserRouter,Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
 import './components/Header'
 import Home from './pages/Home';
@@ -9,30 +9,9 @@ import Contact from './pages/Contact';
 import Header from './components/Header';
 import Offers from './pages/Offers';
 import ScrollToTop from './components/ScrollToTop';
-import { useEffect } from 'react';
-import Aos from 'aos';
-import 'aos/dist/aos.css'
+import AosInitializer from './components/AosInitializer';
 
 function App() {
-  useEffect(() => {
-    Aos.init({
-      duration : 1500, 
-      disable : function() {
-        var maxWidth = 768;
-        return window.innerWidth < maxWidth;
-      }
-    });
-
-    window.addEventListener('resize', () => {
-      Aos.refresh();
-    });
-
-    return () => {
-      window.removeEventListener('resize', () => {
-        Aos.refresh();
-      });
-    };
-  }, []);
 
   return (
       <div className="App">
@@ -41,6 +20,7 @@ function App() {
           <i className="fa-brands fa-whatsapp"></i>
         </a>
         <BrowserRouter>
+          <AosInitializer/>
           <ScrollToTop/>
           <Header/>
           <Routes>
