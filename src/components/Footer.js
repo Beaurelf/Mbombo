@@ -16,7 +16,7 @@ function Footer() {
             <a href="mailto:mbomboenterprise@gmail.com">mbomboenterprise@gmail.com</a><br/>
             <a href="tel:+33649121434">+33649121434</a><br/>
             <a href="tel:+1(514)605-3560">+1(514)605-3560</a><br/>
-            <a href="tel:+237695637366">+237695637366</a>
+            <a href="tel:+237695637366">+237695637366</a><br/>
           </address>
           <img className='logo-footer' src={Logo} alt='Logo Mbombo'onClick={() => navigate('/')}/>
         </div>
