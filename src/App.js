@@ -15,7 +15,7 @@ function App() {
 
   return (
       <div className="App">
-        <a className='button contact-us text-center' href="tel:+1(514)605-3560"><i className="fa-solid fa-phone"></i></a>
+        <a className='button contact-us text-center' href="tel:+33649121434"><i className="fa-solid fa-phone"></i></a>
         <a className='button button-whatsapp' href="https://api.whatsapp.com/send?phone=+1(514)605-3560&amp;text=Bienvenue chez Mbombo entreprise">
           <i className="fa-brands fa-whatsapp"></i>
         </a>

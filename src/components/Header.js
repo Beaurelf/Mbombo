@@ -48,7 +48,7 @@ function Header() {
                                     </li>
                                 ) 
                             })}
-                            <li><a className='button' href="tel:+1(514)605-3560">+1(514)605-3560</a></li>
+                            <li><a className='button' href="tel:+33649121434">+33649121434</a></li>
                         </ul>
                     </nav>
                     <div className="dropdown menu-phone">

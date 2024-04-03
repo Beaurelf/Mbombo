@@ -12,9 +12,11 @@ function Footer() {
           <img className='logo-footer-phone' data-aos="fade-up" src={Logo} alt='Logo Mbombo'onClick={() => navigate('/')}/>
           <h5 data-aos="fade-up">MBOMBO</h5>
           <address data-aos="fade-up">
-            <p className='m-0'>2559C rue Everett</p>
+            <p className='m-0'>167 rue Saint Gilles, 76890 val de Saane</p>
             <a href="mailto:mbomboenterprise@gmail.com">mbomboenterprise@gmail.com</a><br/>
+            <a href="tel:+33649121434">+33649121434</a>
             <a href="tel:+1(514)605-3560">+1(514)605-3560</a>
+            <a href="tel:+237695637366">+237695637366</a>
           </address>
           <img className='logo-footer' src={Logo} alt='Logo Mbombo'onClick={() => navigate('/')}/>
         </div>
