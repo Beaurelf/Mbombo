@@ -35,8 +35,8 @@ function TestimonialSection() {
     }
   }
   return (
-    <section className='my-container'>
-      <div className=' grid d-flex justify-content-center align-items-center flex-column mb-4' data-aos="fade-up">
+    <section>
+      <div className='d-flex justify-content-center align-items-center flex-column mb-4' data-aos="fade-up">
         <div className='testimonials px-5 py-4 mb-3'>
           <div className='text-center'>
             <h2 className='title-section'>Ce que nos clients disent</h2>

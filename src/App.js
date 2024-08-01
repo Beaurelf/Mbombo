@@ -10,11 +10,12 @@ import Header from './components/Header';
 import Offers from './pages/Offers';
 import ScrollToTop from './components/ScrollToTop';
 import AosInitializer from './components/AosInitializer';
+import Origin from './pages/Origin';
 
 function App() {
 
   return (
-      <div className="App">
+      <div>
         <a className='button contact-us text-center' href="tel:+33649121434"><i className="fa-solid fa-phone"></i></a>
         <a className='button button-whatsapp' href="https://api.whatsapp.com/send?phone=+1(514)605-3560&amp;text=Bienvenue chez Mbombo entreprise">
           <i className="fa-brands fa-whatsapp"></i>
@@ -26,6 +27,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/about-us' element={<About/>}/>
+            <Route path='/origin' element={<Origin/>}/>
             <Route path='/why-us' element={<Partner/>}/>
             <Route path='/contact-us' element={<Contact/>}/>
             <Route path='/services' element={<Offers/>}/>

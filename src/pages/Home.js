@@ -6,11 +6,13 @@ import HeroSection from '../components/HeroSection'
 
 function Home() {
   return (
-    <main>
-      <HeroSection/>
-      <AboutSection/>
-      <TestimonialSection/>
-      <PartnerSection/>
+    <main className='my-container'>
+      <div className='grid'>
+        <HeroSection/>
+        <AboutSection/>
+        <TestimonialSection/>
+        <PartnerSection/>
+      </div>
     </main>
   )
 }

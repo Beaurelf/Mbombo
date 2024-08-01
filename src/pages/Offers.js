@@ -66,37 +66,37 @@ function Offers() {
       <div className='text-center' data-aos="fade-up">
         <h2 className='title-section'>Assistant personnel</h2>
       </div>
-      <section className='my-container'>
-        <div className='row grid assistant-description' data-aos="fade-up">
-          <div className='col-md-8'>
-            <h3>Soin Actif Personnalisé</h3>
-            <p className='mb-5'>Nos Mbombo Assistants assurent un suivi complet à chaque visite : tension, médicaments, et soutien ménager au besoin, pour le bien-être de vos proches.</p>
-            <h3>Visite à domicile </h3>
-            <p>Nos Mbombo Assistants se déplacent chez vous pour assurer votre confort et tranquillité d'esprit dans un environnement familier, évitant ainsi votre déplacement.</p>
-          </div>
-          <div  className='col-md-4'>
-            <img src={assistant1} alt='assistant personel'/>
-          </div>
-        </div>
-        <div className='row grid assistant-description' data-aos="fade-up">
-          <div className='col-md-4'>
-            <img src={assistant2} alt='assistant personel'/>
-          </div>
-          <div className='col-md-8'>
-            <h3>Guidance Médicale Personnalisée</h3>
-            <p className='mb-5'>Nos Mbombo Assistants accompagnent aux rendez-vous médicaux, fournissant des informations précises au médecin pour une prise en charge optimale de vos proches.</p>
-            <h3>Evacuation d’urgence</h3>
-            <p>En cas d'urgence, assurez une évacuation sanitaire rapide et efficace avec l’aide de nos mbombo assistant </p>
-          </div>
-        </div>
-      </section>
-      <section className=' my-container mt-5'>
+      <div className='my-container'>
         <div className='grid'>
+          <section>
+            <div className='row grid assistant-description' data-aos="fade-up">
+              <div className='col-md-8'>
+                <h3>Soin Actif Personnalisé</h3>
+                <p className='mb-5'>Nos Mbombo Assistants assurent un suivi complet à chaque visite : tension, médicaments, et soutien ménager au besoin, pour le bien-être de vos proches.</p>
+                <h3>Visite à domicile </h3>
+                <p>Nos Mbombo Assistants se déplacent chez vous pour assurer votre confort et tranquillité d'esprit dans un environnement familier, évitant ainsi votre déplacement.</p>
+              </div>
+              <div className='col-md-4 d-flex justify-content-center align-item*center'>
+                <img className='rounded-circle' src={assistant1} alt='assistant personel' style={{ height: '295px'}}/>
+              </div>
+            </div>
+            <div className='row grid assistant-description' data-aos="fade-up">
+              <div className='col-md-4 d-flex justify-content-center align-item-center mb-4'>
+                <img className='rounded-circle' src={assistant2} alt='assistant personel' style={{ height: '295px'}}/>
+              </div>
+              <div className='col-md-8'>
+                <h3>Guidance Médicale Personnalisée</h3>
+                <p className='mb-5'>Nos Mbombo Assistants accompagnent aux rendez-vous médicaux, fournissant des informations précises au médecin pour une prise en charge optimale de vos proches.</p>
+                <h3>Evacuation d’urgence</h3>
+                <p>En cas d'urgence, assurez une évacuation sanitaire rapide et efficace avec l’aide de nos mbombo assistant </p>
+              </div>
+            </div>
+          </section>
           <OfferSection offers={offers}/>
+          <TestimonialSection/>
+          <PartnerSection/>
         </div>
-      </section>
-      <TestimonialSection/>
-      <PartnerSection/>
+      </div>
     </main>
   )
 }

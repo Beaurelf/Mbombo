@@ -6,7 +6,7 @@ function OfferSection({offers}) {
     const navigate = useNavigate()
 
     return (
-        <div className='offer-section'>
+        <section className='offer-section'>
             <div className='text-center' data-aos="fade-up">
                 <h2 className='title-section'>Nos offres</h2>
             </div>
@@ -43,7 +43,7 @@ function OfferSection({offers}) {
                 })
             }
             </div>
-        </div>
+        </section>
     )
 }
 

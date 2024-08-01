@@ -5,8 +5,8 @@ import africa from '../assets/img/africa.png'
 
 function HeroSection() {
   return (
-    <section className='mb-4 my-container'>
-      <div className='grid row align-items-center justify-content-center'  data-aos="fade-up" >
+    <section className='mb-4'>
+      <div className='row align-items-center justify-content-center'  data-aos="fade-up" >
         <div className='col-md-7 col-12 postion-relative slogan'>
           <img className='africa' src={africa} alt='afrique'/>
           <h2 className='title-mbombo'>

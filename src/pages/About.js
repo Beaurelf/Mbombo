@@ -4,8 +4,10 @@ import TestimonialSection from '../components/TestimonialSection'
 
 function About() {
   return (
-    <main>
-      <TestimonialSection/>
+    <main className='my-container'>
+      <div className='grid'>
+        <TestimonialSection/>
+      </div>
     </main>
   )
 }

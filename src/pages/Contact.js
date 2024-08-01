@@ -14,9 +14,9 @@ function Contact() {
         288 1032 216 1032C144 1032 72 1032 36 1032H0V0Z" fill="url(#paint0_linear_111_77)"/>
         <defs>
         <linearGradient id="paint0_linear_111_77" x1="864" y1="0" x2="864" y2="1032" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#FCDEEA" stopOpacity="0.98"/>
-        <stop offset="0.726" stopColor="#F3F7FF" stopOpacity="0.99452"/>
-        <stop offset="1" stopColor="#FFFAF8"/>
+          <stop stopColor="#FCDEEA" stopOpacity="0.98"/>
+          <stop offset="0.726" stopColor="#F3F7FF" stopOpacity="0.99452"/>
+          <stop offset="1" stopColor="#FFFAF8"/>
         </linearGradient>
         </defs>
       </svg>
@@ -26,7 +26,7 @@ function Contact() {
             <h3>Contactez nous en un <span>Click!</span></h3>
             <p className='mb-5'> Vous avez une question ou besoin d'assistance ? Contactez-nous par e-mail, téléphone ou via le formulaire de contact ci-dessous. 
             Nous sommes impatients de vous aider</p>
-            <img src={contact} alt='assistant personel'/>
+            <img className='rounded-circle' src={contact} alt='assistant personel'/>
           </div>
           <div className='col-md-6'>
             <ContactForm/>
