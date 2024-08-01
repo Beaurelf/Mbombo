@@ -76,12 +76,12 @@ function Offers() {
                 <h3>Visite à domicile </h3>
                 <p>Nos Mbombo Assistants se déplacent chez vous pour assurer votre confort et tranquillité d'esprit dans un environnement familier, évitant ainsi votre déplacement.</p>
               </div>
-              <div className='col-md-4 d-flex justify-content-center align-item*center'>
+              <div className='col-md-4 d-flex justify-content-center align-items-center'>
                 <img className='rounded-circle' src={assistant1} alt='assistant personel' style={{ height: '295px'}}/>
               </div>
             </div>
             <div className='row grid assistant-description' data-aos="fade-up">
-              <div className='col-md-4 d-flex justify-content-center align-item-center mb-4'>
+              <div className='col-md-4 d-flex justify-content-center align-items-center mb-4'>
                 <img className='rounded-circle' src={assistant2} alt='assistant personel' style={{ height: '295px'}}/>
               </div>
               <div className='col-md-8'>
